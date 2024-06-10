@@ -76,6 +76,17 @@ Footer section
     height: 80px;
 }
 
+.m-bar .row{
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+}
+
+.m-bar .col{
+    width: calc(100% / 3);
+    height: 60px;
+}
+
 
 /********************************************************
                  ->UTILITY CLASSES<-
@@ -141,6 +152,8 @@ Tablet responsivness (780px)
 
 @media screen and (min-width: 786px) {
 
+/*sidebar*/
+
 .side-bar{
     width: 250px;
 }
@@ -152,6 +165,17 @@ Tablet responsivness (780px)
 .header-bar{
     left: 250px;
     width: calc(100vw - 250px); 
+}
+
+/*Multimedial bar*/
+
+.m-bar .col{
+    flex-basis: 235px;
+    height: 60px;
+}
+
+.m-bar .lg{
+    flex-grow: 1;
 }
 
 }
