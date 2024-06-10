@@ -12,10 +12,53 @@ body{
     font-family: Arial, sans-serif;
 }
 
+main{
+    height: calc(100vh - 80px);
+    display: flex;
+}
+
 
 /********************************************************
                  ->LAYOUT CLASSES<-
 *********************************************************/
+
+/*-------------------------->
+Sidebar section
+------------------>*/
+
+.side-bar{
+    width: 65px;
+}
+
+/*-------------------------->
+Header bar section
+------------------>*/
+
+.header-bar{
+    position: fixed;
+    left: 65px;
+    top: 0;
+    z-index: 1;
+    width: calc(100vw - 65px); 
+    height: 75px;
+}
+
+/*-------------------------->
+App-content section
+------------------>*/
+
+.app-content{
+    width: calc(100vw - 65px);
+}
+
+
+/*-------------------------->
+Footer section
+------------------>*/
+
+.m-bar{
+    height: 80px;
+}
 
 
 /********************************************************
@@ -27,7 +70,61 @@ body{
                  ->STYLING CLASSES<-
 *********************************************************/
 
+/*-------------------------->
+Header bar styles
+------------------>*/
+
+.header-bar{
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+
+/*-------------------------->
+App content styles
+------------------>*/
+
+.app-content{
+    background-color: rgb(14, 16, 29);
+}
+
+/*-------------------------->
+Sidebar styles
+------------------>*/
+
+.side-bar{
+    background-color: black;
+}
+
+
+/*-------------------------->
+Footer styles
+------------------>*/
+
+.m-bar{
+    background-color: #252525;
+}
 
 /********************************************************
                  ->MEDIA QUEERIES<-
 *********************************************************/
+
+/*-------------------------->
+Tablet responsivness (780px)
+------------------>*/
+
+@media screen and (min-width: 786px) {
+
+.side-bar{
+    width: 250px;
+}
+
+.app-content{
+    width: calc(100% - 250px);
+}
+
+.header-bar{
+    left: 250px;
+    width: calc(100vw - 250px); 
+}
+
+}
