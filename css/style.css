@@ -30,6 +30,22 @@ Sidebar section
     width: 65px;
 }
 
+.side-bar .row{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    height: 100%;
+}
+
+.side-bar .col{
+    height:10%;
+}
+
+.side-bar .col-lg{
+    height:80%;
+}
+
+
 /*-------------------------->
 Header bar section
 ------------------>*/
@@ -65,10 +81,21 @@ Footer section
                  ->UTILITY CLASSES<-
 *********************************************************/
 
+.basis{
+    flex-basis: 1;
+}
+
+.grow{
+    flex-grow: 2;
+}
 
 /********************************************************
                  ->STYLING CLASSES<-
 *********************************************************/
+
+.debug{
+    border: 2px dashed white;
+}
 
 /*-------------------------->
 Header bar styles
