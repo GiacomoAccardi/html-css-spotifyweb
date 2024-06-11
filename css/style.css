@@ -15,6 +15,12 @@ body{
 main{
     height: calc(100vh - 80px);
     display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
 }
 
 
@@ -28,7 +34,9 @@ Sidebar section
 
 .side-bar{
     width: 65px;
+    height: 100%;
 }
+
 
 .side-bar .row{
     display: flex;
@@ -38,11 +46,13 @@ Sidebar section
 }
 
 .side-bar .col{
-    height:10%;
+    height:100px;
+    bottom:0;
 }
 
 .side-bar .col-lg{
-    height:90%;
+    height: calc(100% - 100px)
+
 }
 
 .mobile-sb-content{
@@ -51,7 +61,28 @@ Sidebar section
     flex-direction: column;
 }
 
+.tablet-sb-content{
+    display: none; 
+}
 
+.t-sb-item .bigger{
+    font-size:38pt ;
+    margin-right: 15px;
+}
+
+
+.t-sb-item .small{
+    font-size:12pt ;
+    margin-right: 15px;
+}
+
+.tablet-sb-content .border-b{
+   border-bottom: 1px solid white;
+}
+
+.t-sb-list li{
+    margin-bottom: 20px;
+}
 
 /*-------------------------->
 Header bar section
@@ -125,6 +156,7 @@ Footer section
 
 .m-bar{
     height: 80px;
+    width: 100%;
 }
 
 .m-bar .row{
@@ -151,6 +183,36 @@ Footer section
     flex-grow: 2;
 }
 
+.m-t-30{
+    margin-top: 30px;
+}
+
+.m-l-5{
+    margin-left: 5px;
+}
+
+.m-t-10{
+    margin-top: 10px;
+}
+
+.m-b-10{
+    margin-botton: 10px;
+}
+
+.m-r-10{
+    margin-right: 10px ;
+}
+
+.flx-center{
+    display: flex;
+    align-items: center;
+}
+
+.p-b-10{
+    padding: 10px
+}
+
+
 /********************************************************
                  ->STYLING CLASSES<-
 *********************************************************/
@@ -161,6 +223,10 @@ Footer section
 
 .content-menu li{
     height: 20px;
+}
+
+.bg-black{
+    background-color: black;
 }
 
 /*-------------------------->
@@ -180,9 +246,6 @@ App content styles
     background-color: rgb(14, 16, 29);
 }
 
-.content-menu ul{
-    list-style: none;
-}
 
 /*-------------------------->
 Sidebar styles
@@ -211,6 +274,32 @@ Sidebar styles
     margin-bottom: 30px;
 }
 
+.t-sb-item{
+    color: rgb(143, 143, 143); 
+    font-size: 18pt; 
+    margin-bottom: 20px;  
+    margin-left: 10px;
+}
+
+.t-sb-list{
+    color: rgb(143, 143, 143); 
+}
+
+.t-sb-item span{
+    font-size: 12pt;
+}
+
+.t-sb-item h4{
+    color: white;
+}
+
+.m-sb-item:hover{
+    color: white
+}
+
+.t-sb-item:hover{
+    color: white
+}
 
 /*-------------------------->
 Footer styles
@@ -236,23 +325,42 @@ Tablet responsivness (780px)
     width: 250px;
 }
 
-.app-content{
-    width: calc(100% - 250px);
+.mobile-sb-content{
+    display: none;
 }
+
+.tablet-sb-content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+}
+
+.tablet-sb-content img{
+    width: 100%;
+}
+
+.side-bar .col-lg{
+    overflow-y: scroll;
+}
+
+
+/*headerbar*/
 
 .header-bar{
     left: 250px;
     width: calc(100vw - 250px); 
 }
 
-.mobile-sb-content{
-    display: none;
-}
+
 
 /*app-content*/
 
 .recently-played .col{
     width: 50%;
+}
+
+.app-content{
+    width: calc(100% - 250px);
 }
 
 
@@ -266,6 +374,7 @@ Tablet responsivness (780px)
 .m-bar .lg{
     flex-grow: 1;
 }
+
 
 }
 
