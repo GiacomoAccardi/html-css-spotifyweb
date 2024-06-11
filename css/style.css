@@ -42,8 +42,15 @@ Sidebar section
 }
 
 .side-bar .col-lg{
-    height:80%;
+    height:90%;
 }
+
+.mobile-sb-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 /*-------------------------->
@@ -185,6 +192,25 @@ Sidebar styles
     background-color: black;
 }
 
+.sp-logo{
+    color: white;
+    font-size:18pt;
+    margin-bottom: 15px;
+}
+
+.m-sb-item{
+    color: rgb(143, 143, 143); 
+    font-size: 18pt; 
+    margin-bottom: 10px;
+}
+
+
+.m-sb-small{
+    color: rgb(143, 143, 143); 
+    font-size: 10pt; 
+    margin-bottom: 30px;
+}
+
 
 /*-------------------------->
 Footer styles
@@ -217,6 +243,10 @@ Tablet responsivness (780px)
 .header-bar{
     left: 250px;
     width: calc(100vw - 250px); 
+}
+
+.mobile-sb-content{
+    display: none;
 }
 
 /*app-content*/
