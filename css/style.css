@@ -314,6 +314,10 @@ Header bar styles
     font-size: 8pt;
 }
 
+.btn:hover{
+    font-size: 9pt;
+}
+
 /*-------------------------->
 App content styles
 ------------------>*/
@@ -332,13 +336,20 @@ App content styles
     text-align: center;
 }
 
-li hr{visibility: hidden;}
+li hr{
+    visibility: hidden;
+}
 
 li:hover hr{
     visibility: visible;
     border-color:rgb(0, 192, 0);
     width: 20px;
     align-self: center;
+    margin-top: 4px;
+}
+
+li:hover{
+    color: white;
 }
 
 /*-------------------------->
@@ -388,11 +399,14 @@ Sidebar styles
 }
 
 .m-sb-item:hover{
-    color: white
+    color: white;
+    border-left: 2px solid rgb(0, 192, 0);
 }
 
 .t-sb-item:hover{
-    color: white
+    color: white;
+    border-left: 2px solid rgb(0, 192, 0);
+    padding-left: 5px;
 }
 
 /*-------------------------->
