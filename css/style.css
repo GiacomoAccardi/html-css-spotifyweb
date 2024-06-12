@@ -96,6 +96,7 @@ Header bar section
     width: calc(100vw - 65px); 
     height: 75px;
     padding: 20px;
+    text-align: end;
 }
 
 .header-bar .col{
@@ -148,7 +149,16 @@ App-content section
     height: 20px;
 }
 
+.app-content ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.app-content li{
+    display: flex;
+    flex-direction: column;
+}
 
 /*-------------------------->
 Footer section
@@ -170,7 +180,6 @@ Footer section
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0px 5px;
     margin-top: 15px;
 }
 
@@ -268,6 +277,9 @@ Footer section
     padding: 10px
 }
 
+.no-margin{
+    margin: 0;
+}
 
 /********************************************************
                  ->STYLING CLASSES<-
@@ -293,6 +305,14 @@ Header bar styles
     background-color: rgba(0, 0, 0, 0.603);
 }
 
+.btn{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 8pt;
+}
 
 /*-------------------------->
 App content styles
@@ -302,6 +322,24 @@ App content styles
     background-color: rgb(14, 16, 29);
 }
 
+.content-menu li{
+    color: rgb(143, 143, 143);
+    font-size: 7pt;
+    margin-right: 6px;
+}
+
+.content-menu li{
+    text-align: center;
+}
+
+li hr{visibility: hidden;}
+
+li:hover hr{
+    visibility: visible;
+    border-color:rgb(0, 192, 0);
+    width: 20px;
+    align-self: center;
+}
 
 /*-------------------------->
 Sidebar styles
