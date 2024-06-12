@@ -173,6 +173,10 @@ App-content section
     max-height: 100%;
     padding: 4px;
     text-align: center;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 
 .app-content .cell-t{
@@ -190,6 +194,14 @@ App-content section
 .app-content .circle{
     border-radius: 50%;
 }
+
+.play-popup{
+    color: rgba(255, 255, 255, 0);
+    position: absolute;
+    font-size: 60pt;
+    display: none;
+}
+
 
 /*-------------------------->
 Footer section
@@ -333,7 +345,7 @@ Header bar styles
 ------------------>*/
 
 .header-bar{
-    background-color: rgba(0, 0, 0, 0.603);
+    background-color: rgba(0, 0, 0, 0.842);
 }
 
 .btn{
@@ -390,6 +402,15 @@ li:hover{
 .app-content p{
     color:rgb(143, 143, 143)
 }
+
+.cell:hover .play-popup{
+    color: white;
+} 
+
+.cell:hover img{
+    filter:opacity(30%);
+}
+
 
 /*-------------------------->
 Sidebar styles
@@ -463,9 +484,17 @@ Footer styles
     font-size: 8pt;
 }
 
+.m-bar span:hover{
+    color: white;
+}
+
 .m-bar i{
     color: rgb(143, 143, 143);
     font-size: 7pt;
+}
+
+.m-bar i:hover{
+    color: white;
 }
 
 .cell-icon i{
@@ -496,6 +525,14 @@ Footer styles
 
 .m-row i{
     color: white;
+}
+
+.m-row .volume-bar:hover{
+    background-color: green;
+}
+
+.cell-volume .volume-bar:hover{
+    background-color: green;
 }
 
 /********************************************************
