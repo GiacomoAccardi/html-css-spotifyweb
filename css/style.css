@@ -132,7 +132,8 @@ App-content section
 
 .recently-played .col{
     width: 100%;
-    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .playlists{
@@ -146,7 +147,6 @@ App-content section
 
 .playlists .col{
     width: 50%;
-    height: 20px;
 }
 
 .app-content ul{
@@ -158,6 +158,18 @@ App-content section
 .app-content li{
     display: flex;
     flex-direction: column;
+}
+
+.recently-played .cell{
+    width: 50%;
+    max-height: 100%;
+    padding: 4px;
+    text-align: center;
+}
+
+.cell img{
+    width: 100%;
+    height: 100%;
 }
 
 /*-------------------------->
@@ -350,6 +362,14 @@ li:hover hr{
 
 li:hover{
     color: white;
+}
+
+.recently-played h4{
+    color:white
+}
+
+.recently-played p{
+    color:rgb(143, 143, 143)
 }
 
 /*-------------------------->
